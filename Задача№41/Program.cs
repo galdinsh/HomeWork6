@@ -18,7 +18,7 @@
 
 
 Console.Write("Введите числа через запятую и пробел: ");
-int[] numbers = InputNum(Console.ReadLine());
+int[] numbers = InputNum(Console.ReadLine()!);
 PrintArray(numbers);
 int sum = 0;
 for (int i = 0; i < numbers.Length; i++)
@@ -75,7 +75,7 @@ void PrintArray(int[] array)
     Console.Write("[ ");
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write(array[i] + " ");
+        Console.Write(array[i] + ", ");
     }
     Console.Write("]");
 }
